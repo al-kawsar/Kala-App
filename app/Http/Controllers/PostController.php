@@ -56,7 +56,15 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        $title = $post->title . " || Posts";
+
+        $category = $post->category;
+
+        $newCategory = explode(",", $category);
+
+        $post['category'] = $newCategory;
+
+        return view('posts.show', compact('post', 'title'));
     }
 
     /**
