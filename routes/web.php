@@ -12,4 +12,5 @@ Route::name('posts.')
     ->prefix('posts')
     ->group(function () {
         Route::get('/', 'index')->name('index');
+        Route::get('/{post:slug}', 'show')->name('show');
     });
