@@ -93,8 +93,6 @@ Berikut adalah beberapa referensi yang dapat kamu baca:
 -   [MySQL](https://www.mysql.com/)
 -   [Hyper-Express](https://github.com/kartikk221/hyper-express)
 
-## Jangan Lupa Mampir
-
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [Tailwind-url]: https://tailwindcss.com/
