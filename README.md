@@ -95,10 +95,6 @@ Berikut adalah beberapa referensi yang dapat kamu baca:
 
 ## Jangan Lupa Mampir
 
-[![instagram][instagram]](instagram.com/dea.afrizal)
-[![youtube][youtube]](https://www.youtube.com/@deaafrizal)
-[![website][website]](https://www.deaafrizal.com)
-
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [Tailwind-url]: https://tailwindcss.com/
