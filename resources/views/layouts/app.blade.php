@@ -8,9 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>@yield('title', 'Laravel App')</title>
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
+
+    @include('layouts.partials.navbar')
+
     <main id="app">
         @yield('content')
     </main>
