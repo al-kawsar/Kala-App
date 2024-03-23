@@ -14,11 +14,11 @@
 
 ## ✨ Deskripsi ✨
 
-Kala-App adalah 
+Kala-App adalah ...
 
 ### 🚀 Fitur Fitur
 
-
+- Belum tau
 
 ### ⚙️ Teknologi Pengembangan
 
@@ -41,34 +41,58 @@ Kala-App adalah
 
 ### 📝 Prerequisites
 
--   Composer
--   Node Package Manager (NPM)
+-   PHP >= 8.2
+-   Composer >= 2.6
+-   Node Package Manager (NPM) >= 20.11.1
 -   MySQL
--   PHP 8.2 >=
 
-### 👣 Langkah Instalasi
+### 👣 Langkah Instalasi dan Konfigurasi
 
-1. Instalasi package
 
-    Untuk menginstall package, kamu perlu menjalankan perintah:
+1. Clone repositori ini ke direktori lokal Anda:
 
-    ```
-    ./app.sh install
+    ```bash
+    git clone https://github.com/al-kawsar/Kala-App.git
     ```
 
-2. Import Database
+2. Masuk ke direktori proyek:
 
-    Untuk struktur database dapat kamu unduh di [sini](Kala-App.sql)
-
-3. Menjalankan aplikasi
-
-    Untuk menjalankan aplikasi di perangkat, kamu daperlupat menjalankan perintah:
-
-    ```
-    ./app.sh start
+    ```bash
+    cd Kala-App
     ```
 
-4. Untuk mulai menggunakan aplikasi kita kamu dapat mengunjungi [http:/localhost:5371](http:/localhost:5371)
+3. Instal dependencies:
+
+    ```bash
+    composer install && npm install
+    ```
+
+4. Salin file `.env.example` menjadi `.env`:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+5. Konfigurasi file `.env` dengan informasi database Anda.
+
+6. Generate key aplikasi Laravel:
+
+    ```bash
+    php artisan key:generate
+    ```
+
+7. Jalankan migrasi database untuk membuat skema tabel beserta seeder:
+
+    ```bash
+    php artisan migrate --seed
+    ```
+
+8. Jalankan server lokal untuk proyek:
+
+    ```bash
+    php artisan serve
+    ```
+Proyek sekarang dapat diakses di `http://localhost:8000`.
 
 ## 🤝 Kontribusi
 
