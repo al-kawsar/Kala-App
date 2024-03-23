@@ -15,7 +15,6 @@ return new class extends Migration {
             $table->string('title', 255)->nullable(false);
             $table->string('slug', 255)->unique('slug')->nullable(false);
             $table->text('body')->nullable(false);
-            $table->string('category', 50)->nullable(true);
             $table->string('author', 50)->nullable(false);
             $table->dateTime('published')->nullable(false);
             $table->timestamps();
