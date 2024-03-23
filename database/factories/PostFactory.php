@@ -20,7 +20,6 @@ class PostFactory extends Factory
             "title" => $title = $this->faker->sentence,
             "slug" => str()->slug($title),
             "body" => $this->faker->paragraph(1000),
-            "category" => 'Programming,Tech',
             "author" => $this->faker->firstName(),
             "published" => $this->faker->dateTime(now()),
         ];
