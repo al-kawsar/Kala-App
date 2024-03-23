@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use Carbon\Carbon;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
@@ -25,6 +26,11 @@ class PostController extends Controller
         $title = 'Index Page || Posts';
 
         $posts = $query->select("title", "slug", "body", "author", "published")->orderBy("created_at", "desc")->paginate(10)->withQueryString();
+
+        $posts->getCollection()->transform(function ($post) {
+            $post->published = Carbon::parse($post->published);
+            return $post;
+        });
 
         $end_time = microtime(true); // Waktu selesai eksekusi
 
