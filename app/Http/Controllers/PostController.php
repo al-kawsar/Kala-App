@@ -68,6 +68,7 @@ class PostController extends Controller
 
         $newCategory = explode(",", $category);
 
+        $post->with('categories');
         $post['category'] = $newCategory;
 
         return view('posts.show', compact('post', 'title'));
