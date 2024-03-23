@@ -31,4 +31,9 @@ class Post extends Model
     public $incrementing = true;
     protected $keyType = 'integer';
     public $timestamps = true;
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class);
+    }
 }
