@@ -3,7 +3,6 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 
 <br />
 
@@ -13,32 +12,26 @@
 
 </div>
 
-## ✨ Apasih Kala-App Itu? ✨
+## ✨ Deskripsi ✨
 
 Kala-App adalah 
 
-### 🚀 Fitur Utama Kala-App
+### 🚀 Fitur Fitur
 
-Merupakan implementasi dengan improvisasi dari teknik _Pomodoro_, Kala-App mampu mengubah pengalaman bekerkamenjadi lebih efektif, produktif, dan menyenangkan sehingga terhindar dari burnout. berikut adalah fitur utamanya:
 
--   **Setel Sesuai Kebutuhan**:
-    Kala-App menawarkan timer Pomodoro interaktif yang akan menentukan waktu istirahat didasarkan dari waktu pengerjaan serta seberapa niat kamu dalam mengerjakan tugas. Pembagian niatnya sebagai berikut:
-    -   New Comer: 35% dari waktu kerja
-    -   Reguler : 28% dari waktu kerja
-    -   Enthusiast : 20% dari waktu kerja
--   **Kerjakan Lagi** : Kala-App akan membantumu menampilkan tugas terakhir yang belum kamu selesaikan saat kamu buka kembali, tidak perlu khawatir akan kehilangan tugas yang belum selesai.
--   **Lacak Tugasmu** : Ingin tahu berapa banyak waktu **yang** kamu kerjakan untuk satu tugas? Kala-App mencatat sebearapa banyak kamu memerlukan sesi Pomodoro serta waktu yang kamu luangkan untuk mengerjakannya.
 
 ### ⚙️ Teknologi Pengembangan
 
 -   Frontend :
 
-    ![blade][blade]
+    ![Blade]
+    ![HTML5]
+    ![TailwindCSS]
     
 -   Backend :
 
-    ![PHP][PHP]
-    ![Laravel][laravel]
+    ![PHP]
+    ![Laravel]
     
 -   Database :
 
@@ -81,20 +74,21 @@ Merupakan implementasi dengan improvisasi dari teknik _Pomodoro_, Kala-App mampu
 
 Kontribusi merupakan hal yang dapat memberikan ruang belajar serta inspirasi dari proyek ini. Setiap kontribusi yang kamu berikan **Sangat Dihargai**
 
-Jika kamu memiliki saran untuk membuat proyek ini jadi lebih baik, kamu bisa melakukan fork dan membuat pull request atau kamu juga bisa membuat issue baru. Jangan lupa bintangya ya kak! Terima Kasih!
+Jika kamu memiliki saran untuk membuat proyek ini jadi lebih baik, kamu bisa melakukan fork dan membuat pull request atau kamu juga bisa membuat issue baru. Jangan lupa bintangya yah! Terima Kasih!
 
 ## 📙 Referensi
 
-Berikut adalah beberapa referensi yang dapat kamu baca:
-
--   [React.js](https://reactjs.org/)
+-   [Laravel](https://laravel.com/)
+-   [PHP](https://www.php.net/)
+-   [Composer](https://getcomposer.org/)
 -   [Tailwind CSS](https://tailwindcss.com/)
 -   [Node.js](https://nodejs.org/en)
 -   [MySQL](https://www.mysql.com/)
--   [Hyper-Express](https://github.com/kartikk221/hyper-express)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-
+[HTML5]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[Blade]: https://img.shields.io/badge/Blade%20Templates-%23CC0000.svg?style=for-the-badge
+[PHP]: https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white
+[Laravel]: https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
 [TailwindCSS]: https://img.shields.io/badge/tailwindcss-0F172A?&style=for-the-badge&logo=tailwindcss&logoColor=61DAFB
 [MySQL-url]: https://www.mysql.com/
