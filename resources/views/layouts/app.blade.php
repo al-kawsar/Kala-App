@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <title>@yield('title', 'Laravel App')</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -14,10 +12,18 @@
 
 <body>
 
-    @include('layouts.partials.navbar')
+    @php
+        $hideNavbar = Route::is('register', 'login');
+    @endphp
+
+    @unless ($hideNavbar)
+        @include('layouts.partials.navbar')
+    @endunless
 
     <main id="app">
-        @yield('content')
+        <div class="pt-16">
+            @yield('content')
+        </div>
     </main>
 
     @stack('scripts')
