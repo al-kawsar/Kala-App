@@ -29,8 +29,6 @@ class CategoryPostSeeder extends Seeder
                 // Masukkan ke dalam array dan tabel jika belum ada
                 $insertedPairs[] = [$categoryId, $postId];
 
-                Log::info(print_r($insertedPairs));
-
                 DB::table('category_post')->insert([
                     'category_id' => $categoryId,
                     'post_id' => $postId,
