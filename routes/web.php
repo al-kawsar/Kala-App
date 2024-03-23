@@ -3,9 +3,7 @@
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/posts');
 
 Route::name('posts.')
     ->controller(PostController::class)
