@@ -22,20 +22,20 @@ Kala-App adalah ...
 
 ### ⚙️ Teknologi Pengembangan
 
--   Frontend :
+`Frontend`:
 
-    ![Blade]
-    ![HTML5]
-    ![TailwindCSS]
+![Blade]
+![HTML5]
+![TailwindCSS]
     
--   Backend :
+`Backend`:
 
-    ![PHP]
-    ![Laravel]
+![PHP]
+![Laravel]
     
--   Database :
+`Database`:
 
-    [![MySQL][MySQL]][MySQL-url]
+[![MySQL][MySQL]][MySQL-url]
 
 ## 📙 Panduan Penggunaan 📙
 
