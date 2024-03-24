@@ -1,66 +1,131 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
 
-## About Laravel
+<br />
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h1 style="font-weight:900" align="center">🕒 Kala-App 🕒</h1>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![underconstruction][underconstruction]
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+## ✨ Deskripsi ✨
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Kala-App adalah ...
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🚀 Fitur Fitur
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Belum tau
 
-## Laravel Sponsors
+### ⚙️ Teknologi Pengembangan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   Frontend :
 
-### Premium Partners
+    ![Blade]
+    ![HTML5]
+    ![TailwindCSS]
+    
+-   Backend :
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    ![PHP]
+    ![Laravel]
+    
+-   Database :
 
-## Contributing
+    [![MySQL][MySQL]][MySQL-url]
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📙 Panduan Penggunaan 📙
 
-## Code of Conduct
+### 📝 Prerequisites
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+-   PHP >= 8.2
+-   Composer >= 2.6
+-   Node Package Manager (NPM) >= 20.11.1
+-   MySQL
 
-## Security Vulnerabilities
+### 👣 Langkah Instalasi dan Konfigurasi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+1. Clone repositori ini ke direktori lokal Anda:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    ```bash
+    git clone https://github.com/al-kawsar/Kala-App.git
+    ```
+
+2. Masuk ke direktori proyek:
+
+    ```bash
+    cd Kala-App
+    ```
+
+3. Instal dependencies:
+
+    ```bash
+    composer install && npm install
+    ```
+
+4. Salin file `.env.example` menjadi `.env`:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+5. Konfigurasi file `.env` dengan informasi database Anda.
+
+6. Generate key aplikasi Laravel:
+
+    ```bash
+    php artisan key:generate
+    ```
+
+7. Jalankan migrasi database untuk membuat skema tabel beserta seeder:
+
+    ```bash
+    php artisan migrate --seed
+    ```
+
+8. Jalankan server lokal untuk proyek:
+
+    ```bash
+    php artisan serve
+    ```
+Proyek sekarang dapat diakses di `http://localhost:8000`.
+
+## 🤝 Kontribusi
+
+Kontribusi merupakan hal yang dapat memberikan ruang belajar serta inspirasi dari proyek ini. Setiap kontribusi yang kamu berikan **Sangat Dihargai**
+
+Jika kamu memiliki saran untuk membuat proyek ini jadi lebih baik, kamu bisa melakukan fork dan membuat pull request atau kamu juga bisa membuat issue baru. Jangan lupa bintangya yah! Terima Kasih!
+
+## 📙 Referensi
+
+-   [Laravel](https://laravel.com/)
+-   [PHP](https://www.php.net/)
+-   [Composer](https://getcomposer.org/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [Node.js](https://nodejs.org/en)
+-   [MySQL](https://www.mysql.com/)
+
+[HTML5]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[Blade]: https://img.shields.io/badge/Blade%20Templates-%23CC0000.svg?style=for-the-badge
+[PHP]: https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white
+[Laravel]: https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[TailwindCSS]: https://img.shields.io/badge/tailwindcss-0F172A?&style=for-the-badge&logo=tailwindcss&logoColor=61DAFB
+[MySQL-url]: https://www.mysql.com/
+[MySQL]: https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white
+[NodeJS-url]: https://nodejs.org/en
+[NodeJS]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[javascript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[underconstruction]: https://img.shields.io/badge/Status-WIP-FFFF00?style=for-the-badge&logoColor=FFFF00
+[contributors-shield]: https://img.shields.io/github/contributors/al-kawsar/Kala-App.svg?style=for-the-badge
+[contributors-url]: https://github.com/al-kawsar/Kala-App/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/al-kawsar/Kala-App.svg?style=for-the-badge
+[forks-url]: https://github.com/al-kawsar/Kala-App/network/members
+[stars-shield]: https://img.shields.io/github/stars/al-kawsar/Kala-App.svg?style=for-the-badge
+[stars-url]: https://github.com/al-kawsar/Kala-App/stargazers
+[issues-shield]: https://img.shields.io/github/issues/al-kawsar/Kala-App.svg?style=for-the-badge
+[issues-url]: https://github.com/al-kawsar/Kala-App/issues
