@@ -20,12 +20,10 @@
         @include('layouts.partials.navbar')
     @endunless
 
-    <main id="app">
-        <div class="pt-16">
-            @yield('content')
-        </div>
+    <main id="app" class="pt-16">
+        @yield('content')
     </main>
-
+    
     @stack('scripts')
 </body>
 
