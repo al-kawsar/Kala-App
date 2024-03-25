@@ -13,12 +13,12 @@
                 @php
                     $randomIndex = rand(0, 2);
 
-                    $colors = ['green-300', 'pink-300', 'blue-300'];
+                    $colors = ['bg-green-300', 'bg-pink-300', 'bg-blue-300'];
 
                     $selected_color = $colors[$randomIndex];
                 @endphp
 
-                <div class="p-1 rounded bg-{{ $selected_color }}"># {{ $category->name }}</div>
+                <div class="p-1 rounded {{ $selected_color }}"># {{ $category->name }}</div>
 
             @empty
             @endforelse
