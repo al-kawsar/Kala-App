@@ -40,3 +40,10 @@ Route::name('posts.')
         Route::get('/', 'index')->name('index');
         Route::get('/{post:slug}', 'show')->name('show');
     });
+
+Route::name('dashboard.')
+    ->middleware('auth')
+    ->prefix('dashboard')
+    ->group(function () {
+        Route::get('/', HomeController::class)->name('home');
+    });
