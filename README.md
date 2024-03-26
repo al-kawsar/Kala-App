@@ -8,8 +8,6 @@
 
 <h1 style="font-weight:900" align="center">🕒 Kala-App 🕒</h1>
 
-![underconstruction][underconstruction]
-
 </div>
 
 ## ✨ Deskripsi ✨
