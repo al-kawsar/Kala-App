@@ -9,27 +9,29 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/', '/posts');
 
 // Auth Logic
-Route::middleware('guest')->group(function () {
-    Route::controller(RegisterController::class)
-        ->prefix('register')
-        ->group(function () {
-            Route::get('/', 'index')->name('register');
-            Route::post('/', 'doRegister')->name('do-register');
-        });
+Route::middleware('guest')->
+    prefix('auth')
+    ->group(function () {
+        Route::controller(RegisterController::class)
+            ->prefix('register')
+            ->group(function () {
+                Route::get('/', 'index')->name('register');
+                Route::post('/', 'doRegister')->name('do-register');
+            });
 
-    Route::controller(LoginController::class)
-        ->prefix('login')
-        ->group(function () {
-            Route::get('/', 'index')->name('login');
-            Route::post('/', 'doLogin')->name('do-login');
-        });
+        Route::controller(LoginController::class)
+            ->prefix('login')
+            ->group(function () {
+                Route::get('/', 'index')->name('login');
+                Route::post('/', 'doLogin')->name('do-login');
+            });
 
-    Route::match (['get', 'post'], '/logout', LogoutController::class)
-        ->name('logout')
-        ->withoutMiddleware('guest')
-        ->middleware('auth');
+        Route::match (['get', 'post'], '/logout', LogoutController::class)
+            ->name('logout')
+            ->withoutMiddleware('guest')
+            ->middleware('auth');
 
-});
+    });
 
 Route::name('posts.')
     ->controller(PostController::class)
