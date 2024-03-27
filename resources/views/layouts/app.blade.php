@@ -10,7 +10,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="@yield('body-class', '')">
+<body class="@yield('body-class')">
 
     @php
         $hideNavbar = Route::is('register', 'login');
@@ -20,7 +20,7 @@
         @include('layouts.partials.navbar')
     @endunless
 
-    <main id="app" class="pt-14">
+    <main id="app">
         @yield('content')
     </main>
 
