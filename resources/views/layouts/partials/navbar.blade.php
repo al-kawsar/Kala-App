@@ -1,8 +1,9 @@
 <nav id="navbar" class="bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex w-[100%] px-6 fixed mx-auto justify-between items-center">
-    <a href="{{ route('posts.index') }}" class="logo">
-        <img class="w-12 h-12"
+    <a href="/" class="font-bold text-xl">
+        {{-- <img class="w-12 h-12"
             src="https://cdn.logoworks.com/wp-content/uploads/2014/03/fruit-vegetable-logos-templates-logo-designs-037-1.png"
-            alt="logo">
+            alt="logo"> --}}
+            KalaApp_
     </a>
     <ul class="flex gap-2 p-3 items-center">
         @auth
