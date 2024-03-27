@@ -2,10 +2,10 @@
 
 @section('title', $title)
 @section('content')
-    <div class="w-[80%] mx-auto py-5">
+    <div class="w-[80%] mx-auto py-5 pt-14">
 
         <h1 class="text-[2rem] md:text-[2.5rem] font-bold">Index Posts</h1>
-        <h2 class="text-xl">Filter</h2>
+        {{-- <h2 class="text-xl">Filter</h2> --}}
         <form action="{{ route('posts.index') }}" method="get" class="border border-blue-300 p-3 rounded">
             <div class="flex gap-2 items-center">
                 <label for="search">Search</label>
