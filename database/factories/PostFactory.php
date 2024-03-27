@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,12 +17,16 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            "title" => $title = $this->faker->sentence,
-            "slug" => str()->slug($title),
-            "body" => $this->faker->paragraph(1000),
-            "author" => $this->faker->firstName(),
-            "published" => $this->faker->dateTime(now()),
-        ];
+        $totalUsers = User::count();
+        if ($totalUsers > 0) {
+            return [
+                "title" => $title = $this->faker->sentence,
+                "slug" => str()->slug($title),
+                "body" => $this->faker->paragraph(1000),
+                "user_id" => '',
+                "published" => $this->faker->dateTime(now()),
+            ];
+        }
+        return [];
     }
 }
