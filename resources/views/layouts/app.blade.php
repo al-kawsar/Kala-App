@@ -5,12 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Include Icons -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+
     <title>@yield('title', 'Laravel App')</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
+<body class="@yield('body-class')">
 
     @php
         $hideNavbar = Route::is('register', 'login');
@@ -20,10 +24,10 @@
         @include('layouts.partials.navbar')
     @endunless
 
-    <main id="app" class="pt-16">
+    <main id="app">
         @yield('content')
     </main>
-    
+
     @stack('scripts')
 </body>
 

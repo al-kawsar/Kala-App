@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->string('title', 255)->nullable(false);
             $table->string('slug', 255)->unique('slug')->nullable(false);
             $table->text('body')->nullable(false);
-            $table->string('author', 50)->nullable(false);
+            $table->foreignId('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade')->nullable(false);
             $table->dateTime('published')->nullable(false);
             $table->timestamps();
         });
